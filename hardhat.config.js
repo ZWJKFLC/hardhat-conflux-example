@@ -22,8 +22,10 @@ module.exports = {
   networks: {
     confluxTestnet: {
       url: "https://test.confluxrpc.com",
-      accounts: [process.env.PRIVATE_KEY1],
+      accounts: ["6c978f45a4e8bf9c81f75a63b1c1efd44a96ccfde5aaeda39b4841c265ad0879"],
       chainId: 1,
     }
   }
 };
+// export PRIVATE_KEY1=production
+// npx hardhat verifyCfxContract cfxtest:aam3xs88adxvs6wh15ck7t79eda2p22eje5hebrghk
