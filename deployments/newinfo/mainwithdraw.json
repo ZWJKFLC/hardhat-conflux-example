@@ -1,0 +1,44 @@
+{
+  "contractName": "mainwithdraw",
+  "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [],
+      "name": "greet",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "_greeting",
+          "type": "string"
+        }
+      ],
+      "name": "setGreeting",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "address": "cfxtest:aca264h45gnr26yaaa1seschm3ttp7vdp2xz36h8pp",
+  "blocknumber": 107025352,
+  "constructorArguments": null,
+  "network": {
+    "name": "confluxTestnet",
+    "chainId": 1,
+    "url": "https://test.confluxrpc.com"
+  }
+}
