@@ -17,17 +17,15 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
 /**
  * @type import('hardhat/config').HardhatUserConfig
  */
-require('@openzeppelin/hardhat-upgrades');
-require("@nomiclabs/hardhat-etherscan");
-require('hardhat-abi-exporter');
-const fs = require('fs');
-// var secretinfo =fs.readFileSync("/home/ubuntu/zwj-learn/.secret.json").toString().trim();
-const secretinfo =require(`/root/learn/github/privateinfo/.secret.json`);
-// const secretinfo =require(`/root/learn/github/privateinfoWallet/.secret_official.json`);
-const infrakey='';
-const scankey='';
-module.exports = secretinfo.hardhatset;
-
-
+module.exports = {
+  solidity: "0.8.4",
+  networks: {
+    confluxTestnet: {
+      url: "https://test.confluxrpc.com",
+      accounts: ["6c978f45a4e8bf9c81f75a63b1c1efd44a96ccfde5aaeda39b4841c265ad0879"],
+      chainId: 1,
+    }
+  }
+};
 // export PRIVATE_KEY1=production
 // npx hardhat verifyCfxContract cfxtest:aam3xs88adxvs6wh15ck7t79eda2p22eje5hebrghk
